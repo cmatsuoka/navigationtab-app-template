@@ -13,8 +13,6 @@ import com.actionbarsherlock.view.MenuInflater;
 
 
 public class MainActivity extends SherlockFragmentActivity {
-	public static ListItem[] items;
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -23,7 +21,7 @@ public class MainActivity extends SherlockFragmentActivity {
 		// setup action bar for tabs
 		ActionBar actionBar = getSupportActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-		actionBar.setDisplayShowTitleEnabled(false);
+		//actionBar.setDisplayShowTitleEnabled(false);
 
 		Tab tab = actionBar.newTab().setText("Tab 1");
 		tab.setTabListener(new TabListener<FirstFragment>(this, "tab1", FirstFragment.class));
